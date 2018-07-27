@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>MY WEBSITE</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-red.min.css">
+	<link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet"> <!--  For Bootstrap -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- font awesome fb icon-->
+    <link rel="stylesheet" type="text/css" href="myweb.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Philosopher|Lobester" rel="stylesheet">
+  
+</head>
+
+<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+<!-- Load React. ?????????????? -->
+<script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+
+
+<script type="text/javascript" src="myweb.js"></script>
+
+<body>
+
+	<!-- ****** NAVIGATION LAYOUT ****** -->
+	<section class="grad1">
+    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+  		<header class="mdl-layout__header mdl-layout__header--transparent">
+    		<div class="mdl-layout__header-row">
+      			<!-- Title -->
+      			<span class="mdl-layout-title">
+      				
+      				<!-- React component will be displayed here-->
+      				<div id="seconds_timer"></div>
+						<!-- Load our React component. React is loaded-->
+      					<script type="text/javascript" src="myweb-timer.js"></script>
+      			</span> 
+
+      					<!--navigation to the right ie Home, Blog etc-->
+      					<div class="mdl-layout-spacer"></div>
+      						<!-- Navigation -->
+   							<nav class="mdl-navigation">
+        						<a class="mdl-navigation__link" href="http://www.prashiksha.website/" style="color: black; font-size: 16px; ">
+        							<b>Home</b>
+        						</a>
+       							
+       							<a class="mdl-navigation__link" href="http://makeadiff.in/" style="color: black; font-size: 16px;">
+       								<b>Organisation</b>
+       							</a>
+        						
+        						<a class="mdl-navigation__link" href="" style="color: black; font-size: 16px;">
+        							<b>	</b>
+        						</a>
+        						<!--
+        						<a class="mdl-navigation__link" href="" style="color: black; font-size: 16px;">
+        							<b>Contact</b>
+        						</a> -->
+      						</nav>
+    		</div>
+  		</header>
+
+        <!-- Center Image Display-->
+        <center>
+            	<img src="myweb_images/prashiksha1.jpg" id="prashiksha" class="img-circle" alt="Prashiksha"> 
+    		    	<!--img-circle is an inbuilt Bootstrap class to get circled corner -->
+    	</center>
+
+    	<p id="imgtext">
+    		<i>Prashiksha Jain</i>
+    	</p>
+  
+        <!-- ******Side Navigation Bar****** -->
+  		<div class="mdl-layout__drawer">
+
+    		<span class="mdl-layout-title">
+    			<b>Social Media</b>
+    		</span>
+    			<nav class="mdl-navigation">
+
+      				<a class="mdl-navigation__link" href="https://github.com/Prashiksha" style="color: black;">
+      					<img src="myweb_images/github-blue.jpg" style="height: 50px; width: 50px;">
+                    	<b>Github</b>
+                    </a>
+   					
+   					<a class="mdl-navigation__link" href="https://www.facebook.com/prashiksha.jain" style="color: black;">
+   						<img src="myweb_images/fb.png" style="height: 50px; width: 50px;">
+   						<b>Facebook</b>
+   					</a>
+      				
+      				<a class="mdl-navigation__link" href="" style="color: black;">
+      					<img src="myweb_images/twitter.jpeg" style="height: 50px; width: 50px;">
+      					<b>Twitter</b>
+      				</a>
+      				
+      				<a class="mdl-navigation__link" href="https://www.linkedin.com/in/prashiksha-jain-1a1b52150/" style="color: black;">
+      					<img src="myweb_images/linkdin.jpg" style="height: 50px; width: 50px;">
+      					<b>Linkdin</b>
+      				</a>
+    			</nav>
+  		</div>
+
+	</div>
+  </section>  <!--End of section grad 1 -->
+
+<section id="grad2">
+	<br><br><br>
+	<center>
+		<h1 id="profile">Profile</h1>
+		<hr class="horizontal-line">
+
+	<!-- Columns for bio-->
+	<div class="row">
+		<div class="column">
+			<h1 style="font-size: 45px; font-family: 'Philosopher', cursive; text-shadow: 0 0 3px brown;">
+				<i>Personal Profile</i>
+			</h1> <br>
+			
+			<h4 style="text-align: left;">
+				I am an Engineering student, currently pursuing 3rd year in Computer Science. A learner in web development and computer languages. I work for non-profit organisation by providing support services. 
+
+				<h3 style="font-size: 23px;">An amature in the professional field. Ready to go on the learning road... </h3>
+				<img src="myweb_images/about-me.jpg" class="img-circle" id="about-me">
+				
+			</h4>			
+		</div>	
+
+		<div class="vl"></div>  <!-- vertical division -->
+
+		<div class="column">
+			<h1 style="font-size: 45px; font-family: 'Philosopher', cursive; text-shadow: 0 0 3px brown;">
+				<i>Details</i> <br><br>
+
+				<h4 style="margin-left: 100px; text-align: left;">
+
+					<b style="font-size: 23px;">Name:</b> 
+						<br>Prashiksha Jain <br><br>
+					<b style="font-size: 23px;">Age:</b> 
+						<br>20 years <br><br>
+					<b style="font-size: 23px;">Native to:</b> 
+						<br>Madhya Pradesh
+				</h4>
+			</h1>
+
+		</div> 
+		
+	</div>
+</section>  <!-- End of section grad2 -->
+
+<br><br><br>
+
+
+<!-- AJAX edu-btn-->
+<section style="margin-left: 400px; width: 63%;">
+	<button class="edu-btn" onclick="loadEdu()">
+		<span class="glyphicon glyphicon-education">
+			<b>Education</b>
+		</span>
+	</button>
+	<br><br>
+	<table id="institute_demo" class="table table-striped table-bordered"></table>
+</section>
+
+
+<section id="grad3">
+	<p id="skills">Skills</p>
+	<br><br><br><br>
+	<div class="row-star">
+		<div class="column-star">
+
+			<!--&nbsp; = 1 space. 
+				&ensp; = 2 spaces.
+				&emsp; = 4 spaces 
+				/*********spacing between them matters********-->
+
+			<h3>
+				<img src="myweb_images/html1.png" id="skills-star" class="img-circle">
+				HTML &emsp;&ensp;
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+			</h3>
+
+			<h3>
+				<img src="myweb_images/css.png" id="skills-star" class="img-circle">
+				CSS &emsp; &emsp;
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+			</h3>
+
+			<h3>
+				<img src="myweb_images/sass.png" id="skills-star" class="img-circle">
+				SASS &emsp; &ensp;
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star"></span>
+				<span class="glyphicon glyphicon-star"></span>
+			</h3>
+
+			<h3>
+				<img src="myweb_images/php.png" id="skills-star" class="img-circle">
+				PHP &emsp;&ensp;  &ensp;
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star"></span>
+			</h3>
+
+			<h3>
+				<img src="myweb_images/mysql.png" id="skills-star" class="img-circle">
+				MySQL &emsp;
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star"></span>
+			</h3>
+
+			<h3>
+				<img src="myweb_images/c.png" id="skills-star" class="img-circle">
+				C &emsp;&emsp;&ensp; &emsp;
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star"></span>
+				<span class="glyphicon glyphicon-star"></span>
+			</h3>
+
+			<h3>
+				<img src="myweb_images/cpp.png" id="skills-star" class="img-circle">
+				C++ &emsp;&emsp;&ensp;
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star"></span>
+			</h3>
+	</div> <!--End of 1st column -->
+
+
+		<div class="column-star">
+
+			<h3>
+				<img src="myweb_images/bootstrap.png" id="skills-star" class="img-circle">
+				Bootstrap &emsp; &emsp;&nbsp;
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star "></span>
+				<span class="glyphicon glyphicon-star"></span>
+				<span class="glyphicon glyphicon-star"></span>
+			</h3>
+
+			<h3>
+				<img src="myweb_images/java.jpg" id="skills-star" class="img-circle">
+				Java &emsp; &emsp; &emsp;   &emsp;
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star"></span>
+				<span class="glyphicon glyphicon-star "></span>
+				<span class="glyphicon glyphicon-star"></span>
+				<span class="glyphicon glyphicon-star"></span>
+			</h3>
+
+			<h3>
+				<img src="myweb_images/js.png" id="skills-star" class="img-circle">
+				JavaScript &emsp;   &emsp;
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star "></span>
+				<span class="glyphicon glyphicon-star"></span>
+				<span class="glyphicon glyphicon-star"></span>
+			</h3>
+
+			<h3>
+				<img src="myweb_images/jq.jpg" id="skills-star" class="img-circle">
+				JQuery &emsp;&emsp; &emsp;  &nbsp;
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star"></span>
+				<span class="glyphicon glyphicon-star"></span>
+				<span class="glyphicon glyphicon-star"></span>
+				<span class="glyphicon glyphicon-star"></span>
+			</h3>
+
+			<h3>
+				<img src="myweb_images/ajax-logo.png" id="skills-star" class="img-circle">
+				AJAX &emsp;&emsp; &emsp;  &emsp;
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star"></span>
+				<span class="glyphicon glyphicon-star"></span>
+				<span class="glyphicon glyphicon-star"></span>
+				<span class="glyphicon glyphicon-star"></span>
+			</h3>
+
+			<h3>
+				<img src="myweb_images/react.svg" id="skills-star" class="img-circle">
+				React &emsp;&emsp; &emsp;  &emsp;
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star"></span>
+				<span class="glyphicon glyphicon-star"></span>
+				<span class="glyphicon glyphicon-star"></span>
+				<span class="glyphicon glyphicon-star"></span>
+			</h3>
+
+			<h3>
+				<img src="myweb_images/mdb.png" id="skills-star" class="img-circle">
+				Material Design  &nbsp;
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star"></span>
+				<span class="glyphicon glyphicon-star"></span>
+				<span class="glyphicon glyphicon-star"></span>
+				<span class="glyphicon glyphicon-star"></span>
+			</h3>
+	</div>
+</div>
+</section> <!-- End of section grad3 -->
+
+
+<section id="grad4">
+	<div class="row-k">
+		<h2 style="font-family: 'Courgette', cursive;"> 
+			<b>“Knowledge on its own is nothing, but the application of useful knowledge, <br>
+			&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+			Now that is powerful."
+			
+	        <h3 style="margin-left: 930px;">
+	        	― Rob Liano </b>
+	        </h3> 
+		</h2>
+
+		<br><br>
+  		
+		<a href="https://github.com/Prashiksha">
+			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+						id="git-btn">
+ 				<i><b>Visit &nbsp;Github &nbsp;Profile &nbsp;</b></i>
+			</button>
+		</a>
+	</div>
+</section> <!-- End of section grad4 -->
+
+
+<section id="grad5">
+
+	<p id="painting-text"><br>Art Works</p>
+	<br><br><br>
+
+	<section class="carousel">
+		<figure>
+			<img src="myweb_images/art-birds.jpg" style="height: 500px; width: 500px;">
+			<img src="myweb_images/art-fly.jpg" style="height: 500px; width: 500px;">
+			<img src="myweb_images/art-pair1.jpg" style="height: 500px; width: 500px;">
+			<img src="myweb_images/art-family.jpg" style="height: 500px; width: 500px;">
+		</figure>
+	
+		<nav>
+			<button id="turn">
+				<b>Turn</b>
+				<span class="glyphicon glyphicon-repeat"></span>
+			</button>
+		</nav>
+	</section> 
+
+
+</section> <!--End of section grad5 -->
+
+<section id="grad6">
+
+	<div style="height: 150px; width: 100%; background-color: white;">
+		<p id="support-services">
+			<i>Support Services</i>
+		</p> 
+		<br><br>
+		
+		<p id="mad-text">
+			Volunteer at Make A Difference
+		</p>
+		<br>
+		
+		<a href="http://makeadiff.in/">
+			<img src="myweb_images/MAD.jpg" id="mad-photo" class="img-circle">
+		</a>
+		
+		<p class="mad-para"> <b>
+			Make A Difference (MAD) is a youth driven non-profit organisation.</b>
+            
+            <br><br>
+			
+			<h3 style="text-align: center; color: white; text-shadow: 0 0 15px black;">
+				The organisation works to ensure equitable outcomes for children in orphanages and street shelters. Our vision is that even the most vulnerable children in shelters are able to realize equitable outcomes. We understand the most vulnerable as children who either do not have a family to support them, or children whose families are unable to provide a safe space for them to grow up in. Many of these children end up in shelters,which struggle to address more than infrastructure and basic needs, so Make A Difference focuses on providing them with additional care and support systems to ensure that they flourish.
+			</h3>
+		</p>
+		<br><br>
+		
+		<center> <img src="myweb_images/mad-children.jpg" id="mad-children"> </center>
+	</div>
+
+</section> <!-- End of grad6-->
+
+<section style="width: 62%; margin-left: 400px;" > 
+	<br> 
+		<h1 id="DC">
+			<marquee>
+				Being a part of Children's Dream Camp
+			</marquee>
+		</h1> 
+	<br>
+	
+	<!--iframe width="420" height="600" src="https://www.youtube.com/embed/wfAomn1qXHo"></iframe  
+	                 (2017 DC video. Not to be publically shown)-->
+	<iframe width="420" height="600" src="https://www.youtube.com/embed/ErG6KN3wURs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+</section>
+
+
+<!--Contact Form -->
+<section id="grad7">
+	<div id ="mycard">
+		<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+  			<div class="mdl-card__title">
+    			<p class="mdl-card__title-text" style="font-size: 30px;">Contact</p>
+  			</div>
+  
+  		<div class="mdl-card__supporting-text">
+   			<h4>Get in touch....</h4>
+
+    		<form action="myweb.php" method="post">
+
+      			<div id="name">
+  					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    					<label class="mdl-textfield__label"><b>First Name</b></label>
+    						<input class="mdl-textfield__input" type="text" name="first">
+  					</div>
+          			
+          			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    					<label class="mdl-textfield__label"><b>Last Name</b></label>
+    						<input class="mdl-textfield__input" type="text" name="last">
+  					</div>
+      			</div>
+      
+     			<div id ="contact">
+      				<div id="phone">
+        				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+   				 			<label class="mdl-textfield__label"><b>Mobile Phone</b></label>
+    							<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="mobile">
+    							<span class="mdl-textfield__error">Mobile must be a number!</span>
+  						</div>
+      				</div>
+      
+       				<div id="email">
+        				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    						<label class="mdl-textfield__label"><b>E-mail</b></label>
+    							<input class="mdl-textfield__input" type="email" name="email">
+    							<span class="mdl-textfield__error">Enter a valid email!</span>
+  						</div>
+      				</div>
+      			</div>
+
+      			<center>
+      				<button class="submit" name="submit" type="submit" >
+      					<h6 style="font-size: 15px; color: black;"> <b>Submit </b></h6>
+      				</button>
+      			</center>
+			</form>
+  		</div>
+  		
+  		</div>
+
+  	<!-- FAB button with ripple -->
+  	<div id="next">
+  		<a href="card.html">
+			<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+  				<i class="material-icons" style="color: indigo;">arrow_forward</i>
+			</button>
+		</a>
+  	</div>
+	</div>  <!-- end of mycard -->
+
+</section> <!--End of grad7 -->
+
+<section id="grad-footer">
+	<div class="end-footer">
+		<br>
+		<p id="footer-contact"><b>Contact</b></p>
+		<hr class="horizontal-line">
+
+		<h4>
+			<span class="glyphicon glyphicon-envelope" style="font-size: 20px;"> jain.prashiksha@gmail.com</span>
+			<br><br>
+
+			<i class="fa fa-facebook-square" style="font-size: 20px;"> &ensp;
+				<a href="https://www.facebook.com/prashiksha.jain" style="color: white;">
+					https://www.facebook.com/
+				</a>
+			</i>
+			<hr class="horizontal-line">
+		</h4>
+
+		<!-- LIKE UNLIKE BUTTON -->
+		<i onclick="likeFunction(this)" class="fa fa-thumbs-up" id="like-btn">
+			<br>
+			<span id="like-clicks" style="font-size: 20px;"></span>
+			<h3><b>Like</b></h3>
+		</i>
+
+		&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+ 
+		<i onclick="unlikeFunction(this)" class="fa fa-thumbs-down" id="unlike-btn">
+			<br>
+			<span id="unlike-clicks" style="font-size: 20px;"></span>
+			<h3><b>Unlike</b></h3>
+		</i>
+
+	</div>
+</section> <!-- End of grad-footer section -->
+
+</body>
+</html>
