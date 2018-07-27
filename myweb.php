@@ -3,8 +3,8 @@ echo "<center>";
 
 echo "<body style='background: linear-gradient(to left, lightblue, white, lightblue);'>";
 
-$connection = mysqli_connect("localhost", "prashiksha", "jainjain"); // Establishing Connection with Server
-$db = mysqli_select_db($connection, "myDB"); // Selecting Database from Server
+$connection = mysqli_connect("Server_name", "user_name", "password"); // Establishing Connection with Server
+$db = mysqli_select_db($connection, "DB_name"); // Selecting Database from Server
 
 if(isset($_POST['submit']))
 { // Fetching variables of the form which travels in URL
